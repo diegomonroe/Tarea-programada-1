@@ -7,59 +7,61 @@ envioTipo1::envioTipo1(float peso, float distancia, int clase)
 	this->clase = clase;
 }
 
+
 float envioTipo1::CalculoEnvio()
 {
 	float totalMonto = 0;
 	
 	totalMonto = distancia*calculoPorKm();
 	return totalMonto;
-	
 }
 
 
 float envioTipo1::calculoPorKm()
 {
-	float montoPorKm = 0;
 	switch (clase)
 	{
 	case 1:
-		if (1 <= peso < 3)
+		if (peso>=1 && peso<4)
 		{
-			montoPorKm = 0.195;
+			return 0.195;
 		}
-		else if (3 <= peso < 8)
+		else if (9 > peso && peso >= 4)
 		{
-			montoPorKm = 0.450;
+			return 0.450;
 		}
-		else {
-			montoPorKm = 0.500;
+		else if(peso >= 9) {
+			return 0.500;
 		}
+		break;
 	case 2:
-		if (1 <= peso < 3)
+		if (peso >= 1 && peso < 4)
 		{
-			montoPorKm = 0.0195;
+			return 0.0195;
 		}
-		else if (3 <= peso < 8)
+		else if (9 > peso && peso >= 4)
 		{
-			montoPorKm = 0.0450;
+			return 0.0450;
 		}
-		else {
-			montoPorKm = 0.0500;
+		else if(peso >= 9){
+			return 0.0500;
 		}
+		break;
 	case 3:
-		if (1 <= peso < 3)
+		if (peso >= 1 && peso < 4)
 		{
-			montoPorKm = 0.0150;
+			return 0.0150;
 		}
-		else if (3 <= peso < 8)
+		else if (9 > peso && peso >= 4)
 		{
-			montoPorKm = 0.0160;
+			return 0.0160;
 		}
-		else {
-			montoPorKm = 0.0170;
+		else if (peso >= 9) {
+			return 0.0170;
 		}
+		break;
 	default:
 		break;
 	}
-	return montoPorKm;
+	return 0;
 }

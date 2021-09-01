@@ -141,9 +141,11 @@
   <ItemGroup>
     <ClInclude Include="envio.h" />
     <ClInclude Include="envioTipo1.h" />
+    <ClInclude Include="envioTipo2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="envioTipo1.cpp" />
+    <ClCompile Include="envioTipo2.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
