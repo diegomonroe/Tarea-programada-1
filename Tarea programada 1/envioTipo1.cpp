@@ -1,6 +1,6 @@
 #include "envioTipo1.h"
 
-envioTipo1::envioTipo1(float peso, float distancia, int clase)
+EnvioTipo1::EnvioTipo1(float peso, float distancia, int clase)
 {
 	this->peso = peso;
 	this->distancia = distancia;
@@ -8,16 +8,16 @@ envioTipo1::envioTipo1(float peso, float distancia, int clase)
 }
 
 
-float envioTipo1::CalculoEnvio()
+float EnvioTipo1::CalculoEnvio()
 {
 	float totalMonto = 0;
 	
-	totalMonto = distancia*calculoPorKm();
+	totalMonto = this->distancia*calculoPorKm();
 	return totalMonto;
 }
 
 
-float envioTipo1::calculoPorKm()
+float EnvioTipo1::calculoPorKm()
 {
 	switch (clase)
 	{

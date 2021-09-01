@@ -1,8 +1,9 @@
 #include "envio.h"
 #include "envioTipo1.h"
+#include "envioTipo2.h"
 #include <iostream>
 #include <vector>
-#include "envioTipo2.h"
+
 
 using namespace std;
 
@@ -10,8 +11,8 @@ int main() {
 	float totalMontoEnvios = 0;
 
 	//se crea envio con variables peso, distancia, clase
-	envioTipo1* envio1 = new envioTipo1(2, 100, 1);
-	envioTipo1* envio2 = new envioTipo1(15, 100, 2);
+	EnvioTipo1* envio1 = new EnvioTipo1(2, 100, 1);
+	EnvioTipo1* envio2 = new EnvioTipo1(15, 100, 2);
 
 	envioTipo2* envio3 = new envioTipo2(3, 490);
 	envioTipo2* envio4 = new envioTipo2(10, 520);
