@@ -14,8 +14,8 @@ int main() {
 	EnvioTipo1* envio1 = new EnvioTipo1(2, 100, 1);
 	EnvioTipo1* envio2 = new EnvioTipo1(15, 100, 2);
 
-	envioTipo2* envio3 = new envioTipo2(3, 490);
-	envioTipo2* envio4 = new envioTipo2(10, 520);
+	EnvioTipo2* envio3 = new EnvioTipo2(3, 490);
+	EnvioTipo2* envio4 = new EnvioTipo2(10, 520);
 
 	vector<Envio*> coleccionEnvios;
 	coleccionEnvios.push_back(envio1);
@@ -25,11 +25,11 @@ int main() {
 
 	for (Envio* envio : coleccionEnvios)
 	{
-		cout << envio->CalculoEnvio()<<endl;
+		cout << envio->CalculoEnvio() << endl;
 		totalMontoEnvios += envio->CalculoEnvio();
 	}
 	cout << "El monto total de los envíos es de " << totalMontoEnvios << endl;
-	
+
 
 	delete envio1;
 	delete envio2;
@@ -37,3 +37,4 @@ int main() {
 	delete envio4;
 	return 0;
 }
+
