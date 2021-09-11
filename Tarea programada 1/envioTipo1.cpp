@@ -24,40 +24,40 @@ float EnvioTipo1::calculoPorKm()
 	case 1:
 		if (peso>=1 && peso<4)
 		{
-			return 0.195;
+			return 0.195f;
 		}
 		else if (9 > peso && peso >= 4)
 		{
-			return 0.450;
+			return 0.450f;
 		}
 		else if(peso >= 9) {
-			return 0.500;
+			return 0.500f;
 		}
 		break;
 	case 2:
 		if (peso >= 1 && peso < 4)
 		{
-			return 0.0195;
+			return 0.0195f;
 		}
 		else if (9 > peso && peso >= 4)
 		{
-			return 0.0450;
+			return 0.0450f;
 		}
 		else if(peso >= 9){
-			return 0.0500;
+			return 0.0500f;
 		}
 		break;
 	case 3:
 		if (peso >= 1 && peso < 4)
 		{
-			return 0.0150;
+			return 0.0150f;
 		}
 		else if (9 > peso && peso >= 4)
 		{
-			return 0.0160;
+			return 0.0160f;
 		}
 		else if (peso >= 9) {
-			return 0.0170;
+			return 0.0170f;
 		}
 		break;
 	default:
