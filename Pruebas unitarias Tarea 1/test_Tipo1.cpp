@@ -1,6 +1,7 @@
 #include "pch.h"
-
+#include "..\Tarea programada 1\envioTipo1.h"
 #include "..\Tarea programada 1\envioTipo1.cpp"
+
 
  //Primer tracto, primera clase
 TEST(EnvioTipo1, Calcular_Tipo1_PrimerTracto_Clase1) {

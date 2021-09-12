@@ -1,12 +1,14 @@
 #include "envioTipo2.h"
 
+
+//Constructor del envio de FedEx
 EnvioTipo2::EnvioTipo2(float peso, float distancia)
 {
 	this->peso = peso;
 	this->distancia = distancia;
 }
 
-
+//Calcular el costo total de envio
 float EnvioTipo2::CalculoEnvio()
 {
 	float totalMonto = 20;
@@ -15,6 +17,7 @@ float EnvioTipo2::CalculoEnvio()
 	return totalMonto;
 }
 
+//Calcular montos adicionales al costo base
 float EnvioTipo2::montoAdicional() {
 	float montoAdicional = 0;
 

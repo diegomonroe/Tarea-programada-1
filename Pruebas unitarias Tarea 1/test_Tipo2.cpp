@@ -1,5 +1,5 @@
 #include "pch.h"
-
+#include "..\Tarea programada 1\envioTipo2.h"
 #include "..\Tarea programada 1\envioTipo2.cpp"
 
 

@@ -1,5 +1,7 @@
 #include "envioTipo1.h"
 
+
+//Constructor del envio postal
 EnvioTipo1::EnvioTipo1(float peso, float distancia, int clase)
 {
 	this->peso = peso;
@@ -7,7 +9,7 @@ EnvioTipo1::EnvioTipo1(float peso, float distancia, int clase)
 	this->clase = clase;
 }
 
-
+//Calcular el costo total del envio
 float EnvioTipo1::CalculoEnvio()
 {
 	float totalMonto = 0;
@@ -16,7 +18,7 @@ float EnvioTipo1::CalculoEnvio()
 	return totalMonto;
 }
 
-
+//Calcular el costo por kilometro
 float EnvioTipo1::calculoPorKm()
 {
 	switch (clase)
